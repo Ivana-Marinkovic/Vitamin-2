@@ -1,0 +1,105 @@
+body {
+	font-family: 'Merriweather', serif;
+	background-color: #130d0a;
+	color: blanchedalmond;
+	padding: 0;
+	margin: 0;
+}
+
+.container-fluid {
+	padding: 0 !important;
+}
+
+h2 {
+	padding: 40px 0 10px;
+}
+
+#user-info {
+	margin: 0 6%;
+}
+
+.user-box {
+	background-color: rgb(105, 105, 105);
+	padding: 10px 20px;
+	text-align: left;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+.user-box:hover {
+	background-color: rgba(105, 105, 105, .85);
+}
+
+.delay{
+	opacity: 0;
+}
+
+#hero {
+	height: 800px;
+	overflow: hidden;
+	position: relative;
+}
+
+#content {
+	background-color: #130d0a;
+}
+
+.layer {
+	background-position: bottom center;
+	background-size: auto;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 800px;
+	position: fixed;
+	z-index: -1;
+}
+
+#hero-mobile {
+	display: none;
+	background: url("https://i.ibb.co/d7hw559/full-illustration.png") no-repeat center bottom/cover;
+	height: 320px;
+}
+
+#hero,
+.layer {
+	min-height: 800px;
+}
+
+.layer-bg {
+	background-image: url("../img/ilu_bg.jpg");
+}
+
+.layer-1 {
+	background-image: url("../img/ilu_03.png");
+	background-position: left bottom;
+}
+
+.layer-2 {
+	background-image: url("../img/ilu_02.png");
+}
+
+.layer-3 {
+	background-image: url("../img/ilu_man.png");
+	background-position: right bottom;
+}
+
+.layer-4 {
+	background-image: url("../img/ilu_01.png");
+}
+
+.layer-overlay {
+	background-image: url("../img/ilu_overlay.png");
+}
+
+@media only screen and (max-width: 768px) {
+	#hero {
+		display: none;
+	}
+
+	#hero-mobile {
+		display: block;
+	}
+	#user-info {
+		margin: 0 3%;
+	}
+}
